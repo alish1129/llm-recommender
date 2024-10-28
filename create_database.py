@@ -28,7 +28,7 @@ def generate_data_store():
 def load_documents():
     # loader = DirectoryLoader(DATA_PATH, glob="*.pdf")
     # documents = loader.load()
-    loader = PyPDFLoader(file_path=r"./data/pdf/Faculty.pdf")
+    loader = PyPDFLoader(file_path=r"./data/pdf/CourseDescription.pdf")
     documents = loader.load()
     print(documents)
     print(documents[0].page_content)
